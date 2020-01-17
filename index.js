@@ -2,7 +2,7 @@ const OSS = require('ali-oss')
 
 // 初始化 oss client
 async function initOSS(options) {
-	options.region = options.region || 'oss-cn-beijing'
+	options.region = options.region || 'oss-cn-hangzhou'
 
 	const client = new OSS({
 		accessKeyId: options.accessKeyId,
