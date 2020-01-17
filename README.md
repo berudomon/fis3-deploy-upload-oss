@@ -20,12 +20,12 @@ accessKeyId=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID
 accessKeySecret=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET
 ```js
 fis.match('*.js', {
-    deploy: fis.plugin('alibaba-oss', {
+    deploy: fis.plugin('upload-oss', {
         accessKeyId: '',  //ak || 不填则读取环境变量 WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID
         accessKeySecret: '',  //sk || 不填则读取环境变量 WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET 
         bucket: '', //bucket
         region: '', // 默认 oss-cn-hangzhou
-        to: '/res-test/frontend/',// 上传的目录位置
+        to: '/XXXXX/',// 上传的目录位置
     })
 })
 ```
