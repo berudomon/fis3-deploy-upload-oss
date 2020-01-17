@@ -1,5 +1,5 @@
 {
-  "name": "fis3-upload-oss",
+  "name": "fis3-deploy-upload-oss",
   "version": "1.0.0",
   "description": "fis3发布上传静态资源到阿里OSS",
   "main": "index.js",
@@ -13,6 +13,7 @@
   "keywords": [
     "fis3",
     "ali",
+    "deploy",
     "upload",
     "oss"
   ],
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/berudomon/fis3-upload-oss/issues"
   },
-  "homepage": "https://github.com/berudomon/fis3-upload-oss#readme"
+  "homepage": "https://github.com/berudomon/fis3-upload-oss#readme",
+  "dependencies": {
+    "ali-oss": "^6.5.0"
+  }
 }
