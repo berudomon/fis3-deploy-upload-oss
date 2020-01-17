@@ -1,6 +1,6 @@
 {
   "name": "fis3-deploy-upload-oss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fis3发布上传静态资源到阿里OSS",
   "main": "index.js",
   "scripts": {
