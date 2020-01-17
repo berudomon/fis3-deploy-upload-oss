@@ -1,0 +1,25 @@
+{
+  "name": "fis3-upload-oss",
+  "version": "1.0.0",
+  "description": "fis3发布上传静态资源到阿里OSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berudomon/fis3-upload-oss.git"
+  },
+  "keywords": [
+    "fis3",
+    "ali",
+    "upload",
+    "oss"
+  ],
+  "author": "dodomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berudomon/fis3-upload-oss/issues"
+  },
+  "homepage": "https://github.com/berudomon/fis3-upload-oss#readme"
+}
