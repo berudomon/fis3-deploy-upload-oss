@@ -15,11 +15,14 @@ npm install fis3-deploy-upload-oss or npm install fis3-deploy-upload-oss -g
 使用fis deploy 插件配置
 可以配置上传的目录位置
 
+可以配置环境变量存储id和secret
+accessKeyId=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID
+accessKeySecret=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET
 ```js
 fis.match('*.js', {
     deploy: fis.plugin('alibaba-oss', {
-        accessKeyId: '',  //ak
-        accessKeySecret: '',  //sk
+        accessKeyId: '',  //ak || 不填则读取环境变量 WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID
+        accessKeySecret: '',  //sk || 不填则读取环境变量 WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET 
         bucket: '', //bucket
         region: '', // 默认 oss-cn-hangzhou
         to: '/res-test/frontend/',// 上传的目录位置

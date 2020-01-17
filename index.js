@@ -5,8 +5,8 @@ async function initOSS(options) {
 	options.region = options.region || 'oss-cn-hangzhou'
 
 	const client = new OSS({
-		accessKeyId: options.accessKeyId,
-		accessKeySecret: options.accessKeySecret,
+		accessKeyId: options.accessKeyId || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID,
+		accessKeySecret: options.accessKeySecret || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET,
 		bucket: options.bucket,
 		region: options.region
 	})
