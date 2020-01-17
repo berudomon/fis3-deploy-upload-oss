@@ -5,8 +5,8 @@ async function initOSS(options) {
 	options.region = options.region || 'oss-cn-hangzhou'
 
 	const client = new OSS({
-		accessKeyId: options.accessKeyId || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID,
-		accessKeySecret: options.accessKeySecret || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET,
+		accessKeyId: options.accessKeyId,
+		accessKeySecret: options.accessKeySecret,
 		bucket: options.bucket,
 		region: options.region
 	})
@@ -75,6 +75,8 @@ async function upload(client, options, files = [], next) {
  * @return {undefined}
  */
 module.exports = async (options, modified, total, next) => {
+	options.accessKeyId = options.accessKeyId || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID;
+	options.accessKeySecret = options.accessKeySecret || process.env.WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET;
 	if (!options.accessKeyId || !options.accessKeySecret) {
 		throw new Error('options.accessKeyId and options.accessKeySecret is required!');
 	} else if (!options.bucket) {
