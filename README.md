@@ -12,11 +12,11 @@ npm install fis3-deploy-upload-oss or npm install fis3-deploy-upload-oss -g
 
 ## 使用方法
 
-使用fis deploy 插件配置
+使用fis deploy 插件配置  
 可以配置上传的目录位置
 
-可以配置环境变量存储id和secret
-accessKeyId=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID
+可以配置环境变量存储id和secret  
+accessKeyId=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_ID  
 accessKeySecret=WEBPACK_ALIOSS_PLUGIN_ACCESS_KEY_SECRET
 ```js
 fis.match('*.js', {
